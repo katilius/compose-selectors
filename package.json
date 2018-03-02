@@ -1,0 +1,32 @@
+{
+  "name": "combine-selectors",
+  "version": "0.0.1",
+  "description": "Utility to reduce boilerplate code while using selectors together with Redux mapStateToProps",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel ./src -d ./dist --ignore index.spec.js",
+    "test": "jest",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katilius/combine-selectors.git"
+  },
+  "keywords": [
+    "redux",
+    "selector",
+    "mapStateToProps",
+    "combine"
+  ],
+  "author": "Arminas Katilius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katilius/combine-selectors/issues"
+  },
+  "homepage": "https://github.com/katilius/combine-selectors#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.4.2"
+  }
+}
