@@ -1,4 +1,4 @@
-# Combine Selectors
+# Compose Selectors
 
 Helper function that reduces boilerplate code needed while using selectors alongside 
 connect function.
@@ -13,7 +13,7 @@ connect((state) => ({
 ```
 Can be replaced with:
 ```js
-connect(combineSelectors({
+connect(composeSelectors({
   firstTodo: getFirstTodo,
   todoCount: getTodoCount,
   currentUser: getCurrentUser,
