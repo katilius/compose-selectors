@@ -1,8 +1,8 @@
-import combineSelectors from '../index';
+import composeSelectors from '../index';
 
-describe('combineSelectors', () => {
+describe('composeSelectors', () => {
   it('returns a function', () => {
-    const mapStateToProps = combineSelectors();
+    const mapStateToProps = composeSelectors();
     expect(typeof mapStateToProps).toBe('function');
   });
 
@@ -17,7 +17,7 @@ describe('combineSelectors', () => {
       ]
     };
 
-    const mapStateToProps = combineSelectors({
+    const mapStateToProps = composeSelectors({
       todoCount: getTodoCount,
       firstTodo: getFirstTodo
     });
@@ -39,7 +39,7 @@ describe('combineSelectors', () => {
             todoId: 222
           }
         };
-        const mapStateToProps = combineSelectors(undefined, {
+        const mapStateToProps = composeSelectors(undefined, {
           todoId
         });
         const result = mapStateToProps(state, props);
@@ -62,7 +62,7 @@ describe('combineSelectors', () => {
         todoId: 1111
       }
     };
-    const mapStateToProps = combineSelectors(
+    const mapStateToProps = composeSelectors(
         {
           firstTodo
         },

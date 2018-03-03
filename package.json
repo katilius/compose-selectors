@@ -1,5 +1,5 @@
 {
-  "name": "combine-selectors",
+  "name": "compose-selectors",
   "version": "0.0.1",
   "description": "Utility to reduce boilerplate code while using selectors together with Redux mapStateToProps",
   "main": "./dist/index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katilius/combine-selectors.git"
+    "url": "git+https://github.com/katilius/compose-selectors.git"
   },
   "keywords": [
     "redux",
     "selector",
     "mapStateToProps",
-    "combine"
+    "compose"
   ],
   "author": "Arminas Katilius",
   "license": "ISC",

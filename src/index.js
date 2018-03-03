@@ -13,7 +13,7 @@
  * Can be passed to Redux connect higher order component as mapStateToProps
  * function.
  */
-export default function combineSelectors(stateSelectors = {}, propsSelectors = {}) {
+export default function composeSelectors(stateSelectors = {}, propsSelectors = {}) {
   return (state, props) => ({
     ...mapValues(applySelector(state))(stateSelectors),
     ...mapValues(applySelector(props))(propsSelectors)
